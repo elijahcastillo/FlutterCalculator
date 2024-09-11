@@ -179,8 +179,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 children: [
                   buildButton("0"),
                   buildButton("."),
-                  buildButton("=",
-                      backgroundColor: Colors.green, textColor: Colors.white),
+                  buildOperationButton("%"),
                   buildOperationButton("+"),
                 ],
               ),
@@ -189,6 +188,8 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   buildButton("C", backgroundColor: Colors.red),
                   buildButton("<-",
                       backgroundColor: Colors.black, textColor: Colors.white),
+                  buildButton("=",
+                      backgroundColor: Colors.green, textColor: Colors.white),
                 ],
               ),
             ],
